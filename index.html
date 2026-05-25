@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roohid Parast — Scientist & Researcher</title>
+<meta name="description" content="Roohid Parast is a scientist at Johnson & Johnson working in translational medicine and clinical biomarker research, specializing in IBD, psoriasis, and psoriatic arthritis.">
+<meta name="keywords" content="Roohid Parast, scientist, Johnson Johnson, biomarkers, IBD, translational medicine, biochemistry, Temple University, ACSM trainer, MBA artificial intelligence">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0b1220;
+    --navy-mid: #111d30;
+    --navy-light: #1a2d4a;
+    --amber: #c8923a;
+    --amber-light: #e8b06a;
+    --cream: #f0ebe0;
+    --muted: #8a9ab5;
+    --border: rgba(138,154,181,0.15);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--navy); color: var(--cream); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(200,146,58,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(200,146,58,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; z-index: 0; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 4rem; background: rgba(11,18,32,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--cream); text-decoration: none; letter-spacing: 0.05em; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--amber); }
+  #hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 4rem; padding-top: 5rem; }
+  .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s ease forwards 0.2s; }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(4rem, 9vw, 9rem); font-weight: 300; line-height: 0.95; letter-spacing: -0.02em; color: var(--cream); opacity: 0; animation: fadeUp 0.9s ease forwards 0.35s; }
+  .hero-name em { font-style: italic; color: var(--amber-light); }
+  .hero-tagline { margin-top: 2rem; font-size: 1.05rem; color: var(--muted); max-width: 540px; font-weight: 300; opacity: 0; animation: fadeUp 0.9s ease forwards 0.55s; }
+  .hero-cta { margin-top: 3rem; display: flex; gap: 1.5rem; opacity: 0; animation: fadeUp 0.9s ease forwards 0.7s; }
+  .btn-primary { display: inline-block; padding: 0.75rem 2rem; background: var(--amber); color: var(--navy); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: background 0.2s, transform 0.2s; }
+  .btn-primary:hover { background: var(--amber-light); transform: translateY(-2px); }
+  .btn-secondary { display: inline-block; padding: 0.75rem 2rem; border: 1px solid var(--border); color: var(--muted); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; transition: border-color 0.2s, color 0.2s; }
+  .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+  .hero-scroll { position: absolute; bottom: 2.5rem; left: 4rem; display: flex; align-items: center; gap: 0.75rem; color: var(--muted); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0; animation: fadeIn 1s ease forwards 1.2s; }
+  .scroll-line { width: 40px; height: 1px; background: var(--amber); animation: expandLine 1s ease forwards 1.5s; transform-origin: left; transform: scaleX(0); }
+  section { position: relative; z-index: 1; padding: 6rem 4rem; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--amber); margin-bottom: 3rem; display: flex; align-items: center; gap: 1rem; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); max-width: 80px; }
+  .section-divider { width: 100%; height: 1px; background: var(--border); max-width: 1200px; margin: 0 auto; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .about-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 400; line-height: 1.2; color: var(--cream); }
+  .about-headline em { font-style: italic; color: var(--amber-light); }
+  .about-body p { color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem; }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+  .stat-item { border-left: 2px solid var(--amber); padding-left: 1rem; }
+  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--cream); line-height: 1; }
+  .stat-label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 0.25rem; }
+  .experience-list { display: flex; flex-direction: column; gap: 0; }
+  .exp-item { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+  .exp-item:first-child { border-top: 1px solid var(--border); }
+  .exp-meta { padding-top: 0.25rem; }
+  .exp-period { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.5rem; }
+  .exp-company { font-size: 0.8rem; color: var(--muted); }
+  .exp-role { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: var(--cream); margin-bottom: 0.75rem; line-height: 1.2; }
+  .exp-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+  .exp-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  .tag { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); border: 1px solid rgba(200,146,58,0.3); padding: 0.2rem 0.6rem; }
+  .expertise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--border); }
+  .expertise-card { background: var(--navy); padding: 2.5rem; transition: background 0.25s; }
+  .expertise-card:hover { background: var(--navy-mid); }
+  .expertise-icon { font-size: 1.5rem; margin-bottom: 1.25rem; display: block; }
+  .expertise-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; color: var(--cream); margin-bottom: 0.75rem; }
+  .expertise-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+  .writing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .writing-card { border: 1px solid var(--border); padding: 2rem; transition: border-color 0.25s, transform 0.25s; text-decoration: none; display: block; }
+  .writing-card:hover { border-color: var(--amber); transform: translateY(-4px); }
+  .writing-platform { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.75rem; }
+  .writing-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--cream); line-height: 1.35; margin-bottom: 0.75rem; }
+  .writing-excerpt { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+  .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 300; line-height: 1.2; color: var(--cream); margin-bottom: 1.5rem; }
+  .contact-headline em { font-style: italic; color: var(--amber-light); }
+  .contact-body { font-size: 0.92rem; color: var(--muted); line-height: 1.75; }
+  .contact-links { display: flex; flex-direction: column; gap: 1rem; padding-top: 0.5rem; }
+  .contact-link { display: flex; align-items: center; gap: 1rem; color: var(--cream); text-decoration: none; font-size: 0.9rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); transition: color 0.2s; }
+  .contact-link:hover { color: var(--amber); }
+  .contact-link-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); min-width: 80px; }
+  footer { position: relative; z-index: 1; text-align: center; padding: 3rem 4rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.8rem; letter-spacing: 0.05em; }
+  footer span { color: var(--amber); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes expandLine { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    #hero, section { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .hero-scroll { left: 1.5rem; }
+    .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .expertise-grid, .writing-grid { grid-template-columns: 1fr; }
+    .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .about-stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="#hero" class="nav-logo">Roohid Parast</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<section id="hero">
+  <p class="hero-eyebrow">Scientist · MBA Candidate (AI) · ACSM Trainer</p>
+  <h1 class="hero-name">Roohid<br><em>Parast</em></h1>
+  <p class="hero-tagline">Translational scientist at Johnson &amp; Johnson, working at the intersection of clinical biomarker research, IBD drug development, and precision medicine.</p>
+  <div class="hero-cta">
+    <a href="#experience" class="btn-primary">View Experience</a>
+    <a href="#writing" class="btn-secondary">Read My Work</a>
+  </div>
+  <div class="hero-scroll"><span class="scroll-line"></span>Scroll to explore</div>
+</section>
+<div class="section-divider"></div>
+<section id="about">
+  <p class="section-label reveal">About</p>
+  <div class="about-grid">
+    <div class="reveal">
+      <h2 class="about-headline">Bridging the gap between <em>lab science</em> and clinical impact.</h2>
+      <div class="about-stats">
+        <div class="stat-item"><div class="stat-number">3+</div><div class="stat-label">Years in Pharma</div></div>
+        <div class="stat-item"><div class="stat-number">J&amp;J</div><div class="stat-label">Current Employer</div></div>
+        <div class="stat-item"><div class="stat-number">BS</div><div class="stat-label">Biochemistry, Temple</div></div>
+        <div class="stat-item"><div class="stat-number">MBA</div><div class="stat-label">AI Concentration, 2026</div></div>
+      </div>
+    </div>
+    <div class="about-body reveal">
+      <p>I am a scientist at Johnson &amp; Johnson in Springhouse, PA, contributing to the clinical development of compounds targeting inflammatory bowel disease, psoriasis, and psoriatic arthritis. My work focuses on generating and analyzing proteomic and transcriptomic datasets that support dose selection, mechanism of action assessment, and PK/PD modeling in clinical trials.</p>
+      <p>My path into translational science started with a BS in Biochemistry from Temple University, followed by roles at QPS (bioanalytical assay development and validation), and GSK (biopharmaceutical manufacturing). Each step gave me a broader view of how a drug moves from discovery through to the clinic.</p>
+      <p>Outside the lab, I am completing an MBA with a concentration in Artificial Intelligence, expected 2026. I am interested in how AI and machine learning are reshaping drug discovery, clinical trial design, and biomarker analysis — and how scientists with deep domain expertise can lead that transition. I also hold an ACSM personal trainer certification and write about the science of training, recovery, and inflammation.</p>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section id="experience">
+  <p class="section-label reveal">Experience</p>
+  <div class="experience-list">
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-period">In Progress · 2026</div><div class="exp-company">Graduate Studies</div></div>
+      <div class="exp-content">
+        <h3 class="exp-role">MBA — Artificial Intelligence Concentration</h3>
+        <p class="exp-desc">Pursuing a Masters of Business Administration with a concentration in Artificial Intelligence. Focused on how AI and machine learning are transforming drug development, clinical research, and precision medicine. Expected completion end of 2026.</p>
+        <div class="exp-tags"><span class="tag">Machine Learning</span><span class="tag">AI in Healthcare</span><span class="tag">Drug Development Strategy</span><span class="tag">Expected 2026</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-period">2024 – Present</div><div class="exp-company">Johnson &amp; Johnson</div></div>
+      <div class="exp-content">
+        <h3 class="exp-role">Scientist, Translational Medicine</h3>
+        <p class="exp-desc">Delivering translational datasets to support MoA, pathway engagement, and PD/PK modeling for clinical compounds in the IBD, psoriasis, and psoriatic arthritis portfolio. Generating robust clinical biomarker data for dose selection at governance meetings. Supporting RNA extraction, tissue lysate generation, digital spatial profiling (DSP), and single-cell analysis from human clinical FFPE tissue.</p>
+        <div class="exp-tags"><span class="tag">MSD &amp; SMC Immunoassays</span><span class="tag">scRNAseq</span><span class="tag">DSP / COSMX</span><span class="tag">IBD</span><span class="tag">ELN</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-period">2024</div><div class="exp-company">GSK</div></div>
+      <div class="exp-content">
+        <h3 class="exp-role">Biopharmaceutical Manufacturing Associate</h3>
+        <p class="exp-desc">Performed production operations including fermentation, cell culture, chromatographic separation, filtration, and concentration under GMP. Operated large-scale automated equipment, monitored critical process parameters, and participated in cross-functional engineering, validation, and Tech Transfer activities.</p>
+        <div class="exp-tags"><span class="tag">GMP</span><span class="tag">Fermentation</span><span class="tag">SAP / EBR</span><span class="tag">Chromatography</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-period">2022 – 2024</div><div class="exp-company">QPS</div></div>
+      <div class="exp-content">
+        <h3 class="exp-role">Associate Scientist II</h3>
+        <p class="exp-desc">Method development, validation, transfer, and sample analysis of immunogenicity and pharmacokinetic assays using Gyrolab, MSD, and UV-Vis ELISA platforms. Principal investigator on multiple studies, supervising lead analysts and publishing clinical and non-clinical study reports. Trained new hires and managed lab operations under GLP.</p>
+        <div class="exp-tags"><span class="tag">Gyrolab</span><span class="tag">ELISA</span><span class="tag">GLP</span><span class="tag">Watson LIMS</span><span class="tag">Immunogenicity</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-period">2021 – 2022</div><div class="exp-company">Knights Medical Association</div></div>
+      <div class="exp-content">
+        <h3 class="exp-role">Medical Assistant Intern</h3>
+        <p class="exp-desc">Assisted attending physicians during patient examination, documented patient history, physical findings, and procedures. Maintained accurate records of physician communication and patient care activities.</p>
+        <div class="exp-tags"><span class="tag">Clinical Documentation</span><span class="tag">Patient Care</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section id="expertise">
+  <p class="section-label reveal">Areas of Expertise</p>
+  <div class="expertise-grid reveal">
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">Clinical Biomarker Science</h3><p class="expertise-desc">Generating and analyzing proteomic and transcriptomic datasets from human serum and tissue to support clinical dose selection, pharmacodynamic assessment, and mechanism of action characterization.</p></div>
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">Immunoassay Development</h3><p class="expertise-desc">Method development, validation, and transfer of immunogenicity and PK assays using MSD, SMC, Gyrolab, and ELISA platforms. Experience as principal investigator on multi-study programs under GLP and FDA guidelines.</p></div>
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">Spatial &amp; Single-Cell Biology</h3><p class="expertise-desc">Supporting digital spatial profiling (DSP/NanoString), COSMX protein analysis, and single-cell RNA sequencing from clinical FFPE tissue to characterize cellular responses to treatment.</p></div>
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">Biopharmaceutical Manufacturing</h3><p class="expertise-desc">GMP production operations including fermentation, cell culture, chromatographic separation, and filtration at large scale. Experienced with SAP, electronic batch records, and cross-functional validation activities.</p></div>
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">Inflammation &amp; IBD Research</h3><p class="expertise-desc">Focused clinical biomarker support for the ulcerative colitis and Crohn's disease pipeline, with deep familiarity with the inflammatory pathways and treatment mechanisms relevant to the IBD space.</p></div>
+    <div class="expertise-card"><span class="expertise-icon">⬡</span><h3 class="expertise-title">AI &amp; Drug Development</h3><p class="expertise-desc">Pursuing an MBA with an AI concentration to understand how machine learning is transforming clinical trial design, biomarker analysis, and precision medicine strategy.</p></div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section id="writing">
+  <p class="section-label reveal">Writing</p>
+  <div class="writing-grid reveal">
+    <a href="https://medium.com/@roohidparast" target="_blank" class="writing-card">
+      <div class="writing-platform">Medium</div>
+      <h3 class="writing-title">What Biomarkers Can Tell Us About Inflammatory Bowel Disease</h3>
+      <p class="writing-excerpt">A scientist's perspective on how proteomic and transcriptomic tools are reshaping IBD drug development.</p>
+    </a>
+    <a href="https://medium.com/@roohidparast" target="_blank" class="writing-card">
+      <div class="writing-platform">Medium</div>
+      <h3 class="writing-title">From the Bench to the Gym: What Science and Fitness Have in Common</h3>
+      <p class="writing-excerpt">How the principles of rigorous lab science map directly onto evidence-based physical training.</p>
+    </a>
+    <a href="https://www.quora.com/profile/Roohid-Parast" target="_blank" class="writing-card">
+      <div class="writing-platform">Quora</div>
+      <h3 class="writing-title">Answers on Biomarkers, Pharma Careers &amp; Peptides</h3>
+      <p class="writing-excerpt">Answering questions about drug development, clinical science, GLP-1 peptides, and how to build a career in pharma without a PhD.</p>
+    </a>
+  </div>
+</section>
+<div class="section-divider"></div>
+<section id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <h2 class="contact-headline">Let's <em>connect.</em></h2>
+      <p class="contact-body">Whether you are working in translational medicine, interested in clinical biomarker science, or want to discuss training and fitness from a scientific perspective, I am always open to a conversation.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:roohidparast@gmail.com" class="contact-link"><span class="contact-link-label">Email</span>roohidparast@gmail.com</a>
+      <a href="https://www.linkedin.com/in/roohidparast" target="_blank" class="contact-link"><span class="contact-link-label">LinkedIn</span>linkedin.com/in/roohidparast</a>
+      <a href="https://medium.com/@roohidparast" target="_blank" class="contact-link"><span class="contact-link-label">Medium</span>medium.com/@roohidparast</a>
+      <a href="https://www.quora.com/profile/Roohid-Parast" target="_blank" class="contact-link"><span class="contact-link-label">Quora</span>quora.com/profile/Roohid-Parast</a>
+      <a href="https://www.researchgate.net/profile/Roohid-Parast" target="_blank" class="contact-link"><span class="contact-link-label">ResearchGate</span>researchgate.net/profile/Roohid-Parast</a>
+    </div>
+  </div>
+</section>
+<footer><p>© 2025 <span>Roohid Parast</span> · Scientist · Philadelphia, PA</p></footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => { if (el.isIntersecting) { el.target.classList.add('visible'); observer.unobserve(el.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
